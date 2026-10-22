@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acasă</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Acasă</h1>
+    <p id="welcome">Bine ai venit!</p>
+    <button id="logout" type="button">Ieși</button>
+  </main>
+  <script>
+    // Without a signed-in user, send the visitor back to the login page.
+    const user = sessionStorage.getItem("user");
+    if (!user) {
+      location.replace("index.html");
+    } else {
+      document.getElementById("welcome").textContent = "Bine ai venit, " + user + "!";
+    }
+    document.getElementById("logout").addEventListener("click", () => {
+      sessionStorage.removeItem("user");
+      location.replace("index.html");
+    });
+  </script>
+</body>
+</html>

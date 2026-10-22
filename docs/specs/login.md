@@ -1,6 +1,6 @@
 # Login page
 
-Status: draft · Owner: <your name>
+Status: draft · Owner: Andrei
 
 This is an example spec. Keep its four sections for your own specs and
 replace the content. One file per feature.

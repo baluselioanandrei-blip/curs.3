@@ -1,13 +1,13 @@
-# TODO: project name
+# Pagină de autentificare
 
-TODO: one or two sentences. What the project is and who uses it.
+Pagină de login în HTML, CSS și JavaScript simplu, pentru cursul „Tehnologii și aplicații web”. O folosesc utilizatorii aplicației ca să intre în cont.
 
 ## Non-standard
-- TODO: only what an agent could not guess, for example "everything runs in
-  Docker" or "Yarn 4 with node_modules". Delete this section if there is nothing.
+- Fără build și fără npm: deschizi app/index.html direct în browser.
+- Nu există backend încă. auth.js e un stub care acceptă doar contul demo@example.com / demo1234.
 
 ## Structure
-TODO: folders, not files. Example: app/ front end · api/ server · database/ SQL
+app/ pagini HTML, CSS și JS · docs/ documentația proiectului · bin/ scriptul de verificare
 
 ## Where to look
 - docs/state.md: first, in every session
